@@ -1,7 +1,19 @@
-export default function Home() {
+import Camp from "@/components/Camp";
+import Features from "@/components/Features";
+import GetApp from "@/components/GetApp";
+import Guide from "@/components/Guide";
+import Hero from "@/components/Hero";
+
+const Home = () => {
   return (
-    <>
-      <h1 className="text-green-500">Hello World</h1>
-    </>
+    <div>
+      <Hero />
+      <Camp />
+      <Guide />
+      <Features />
+      <GetApp />
+    </div>
   );
-}
+};
+
+export default Home;
