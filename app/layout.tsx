@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Bebas_Neue } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const inter = Bebas_Neue({
+const inter = Inter({
   subsets: ["latin"],
   weight: "400",
   display: "swap",

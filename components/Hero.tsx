@@ -1,9 +1,17 @@
 import Image from "next/image";
+import { Inter } from "next/font/google";
 import Button from "./Button";
+
+const inter = Inter({
+  subsets: ["latin"],
+  weight: "500",
+});
 
 const Hero = () => {
   return (
-    <section className="max-container padding-container flex flex-col gap-20 py-10 pb-32 md:gap-28 lg:py-20 xl:flex-row">
+    <section
+      className={`max-container padding-container flex flex-col gap-20 py-10 pb-32 md:gap-28 lg:py-20 xl:flex-row ${inter.className}`}
+    >
       <div className="hero-map" />
 
       <div className="relative z-20 flex flex-1 flex-col xl:w-1/2">
@@ -36,9 +44,9 @@ const Hero = () => {
               ))}
           </div>
 
-          <p className="bold-16 lg:bold-20 text-blue-70">
+          <p className="bold-16 regular-12 lg:bold-20 text-blue-70">
             198k
-            <span className="regular-16 lg:regular-20 ml-1">
+            <span className="regular-12 lg:regular-20 ml-1">
               Excellent Reviews
             </span>
           </p>
